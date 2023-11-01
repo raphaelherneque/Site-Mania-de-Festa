@@ -1,3 +1,51 @@
+@import url(./assets/CSS/reset.css);
+
 body{
-    background-color: 25,255,25,0;
+    background-color: #fff;
 }
+
+.cabecalho{
+    display: flex;
+    height: 120px;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    border: 1px solid red
+}
+
+.cabecalho #menu-interno{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cabecalho a {
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px 20px;
+    text-decoration: none;
+    
+}
+
+
+.cabecalho button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #25d366;
+    border-radius: 30px;
+    box-shadow: 10px #768f76;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+.descricao{
+    height: 600px;    
+}
+.descricao #mania{
+    width: 1200px;
+}pa
+

@@ -4,61 +4,78 @@
     <meta lang="pt-BR"> 
     <meta charset="UTF-8">
     <title>Buffet Mania de Festa - Festas Infantis</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/IMG/favicon-16x16.png">
     <!-- Você pode adicionar links para seus estilos CSS aqui -->
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f4c3614949.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <header class="cabecalho">
-        <img id="logo" src="/accets/Logo.png" width="160px" height="80px">                 
+        <img id="logo" src="./assets/IMG/Logo.png" alt="Logomarca" width="160px" height="80px">                 
         <div id="menu-interno">
-            <a href="#descricao">O BUFFET</a>
-            <a href="#pacotes">NOSSOS PACOTES</a>
-            <a href="#contato">CONTATO</a>
+            <a id="cor1" href="#descricao">O BUFFET</a>
+            <a id="cor2" href="#pacotes">NOSSOS PACOTES</a>
+            <a id="cor3" href="#contato">CONTATO</a>
         </div>    
-        <button><a href="https://wa.me/5585981555252" target="_blank" class="whatsapp-button"><b>Orçamento</b></a></button>
+        <button>
+            <a class="orcamento" href="https://wa.me/5585981555252" target="_blank" class="whatsapp-button"> ORÇAMENTO</a>
+            <i class="fa-brands fa-whatsapp" style="color: #ffffff;" ></i>
+        </button>
     </header>
     
-    <section id="descricao">
+    <section class="descricao">
+        <img id="mania" src="./assets/IMG/Logo Mania de Festa 2024.png" alt=" Mania de Festa">
         <h2>Nossos Serviços</h2>
         <p>Oferecemos uma variedade de serviços para tornar a festa dos pequenos inesquecível. Nossos serviços incluem:</p>
         <ul>
-            <li>Decoração temática</li>
+            <li>Decoração temática para festas infantis</li>
             <li>Vartiedade de brinquedos</li>
-            <li>Buffet de comida deliciso com diversas opções</li>
+            <li>Buffet de comida delicisa com diversas opções</li>
             <li>Equipe completa</li>
-            <li><strong>Buffet móvel</strong></li>
+            <li><strong>Buffet móvel para qualquer ocasião</strong></li>
         </ul>
     </section>
 
-    <section id="pacotes">
-        <h2>Nossos Pacotes</h2>
-        <h3> Para festa no buffet</h3>
-            <ul>
-                <li><h4>Pacote Festou</h4></li>
-                    <p>Para quem procura um <b>preço baixo</b> aliado a qualidade de serviço.</p>
-                    <p>Exclusivos para eventos de <b>segunda a quinta, exceto feriados</b></p>
-                    <p>Serviço de buffet completo</p>
-                    <p>Desfrute de todos os temas que <b>já temos</b> em nosso acervo sem custo adicional. <i>Para temas fora do acervo consulte nossa equipe.</i></p>
-                <li>Pacote Mania</li>
-                    <p>Oferece a experiência ampla.</p>
-                    <p>Realize seu evento em qualquer dia disponível em nossa agenda</b></p>
-                    <p>Serviço de buffet completo</p>
-                    <p>Desfrute todas as possibilidades de temas de nosso acervo sem custo adicionak. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i></p>
-                <li>Pacote Premiun</li>
-                    <p>A forma mais completa e tranquila de contratar sua festa.</p>
-                    <P>Bolo cenográfico - Sousplat e Guardanapo Pesonalizados - Mimos personalizado - Centros de mesa - Recreação - Doces - Chocolates - Cobertura fotográfica - Ensaio fotográfico - Convite virtual</P>
-                    <p>Realize seu evento em qualquer dia disponível em nossa agenda</b></p>
-                    <p>Serviço de buffet completo</p>
-                    <p>Desfrute todas as possibilidades de temas de nosso acervo sem custo adicionak. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i></p>                
-            </ul>
+    <section class="pacotes-do-buffet" >
+        <img id="banner1" src="./assets/IMG/fundo-circo1.jpeg">
+        <h1>Nossos Pacotes</h1>
+        <section> 
+            <h2>Para festa no buffet</h2>
+            <details>
+                <summary>Pacote Festou</summary>
+                    <p>Para quem procura um <b>preço baixo</b> aliado a qualidade de serviço.<br>
+                    Exclusivos para eventos de <b>segunda a quinta, exceto feriados</b><br>
+                    Serviço de buffet completo<br>
+                    Desfrute de todos os temas que <b>já temos</b> em nosso acervo sem custo adicional. <i>Para temas fora do acervo consulte nossa equipe.</i></p>
+            </details> 
+            
+            <details>
+                <summary>Pacote Mania</summary>
+                    <p>Oferece a experiência ampla.<br>
+                    Realize seu evento em qualquer dia disponível em nossa agenda</b><br>
+                    Serviço de buffet completo<br>
+                    Desfrute todas as possibilidades de temas de nosso acervo sem custo adicionak. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i>
+            </details>
+            
+            <details>
+                <summary>Pacote Premiun</summary>
+                    <p>A forma mais completa e tranquila de contratar sua festa.<br>
+                    Bolo cenográfico - Sousplat e Guardanapo Pesonalizados - Mimos personalizado - Centros de mesa - Recreação - Doces - Chocolates - Cobertura fotográfica - Ensaio fotográfico - Convite virtual<br>
+                    Realize seu evento em qualquer dia disponível em nossa agenda</b><br>
+                    Serviço de buffet completo<br>
+                    Desfrute todas as possibilidades de temas de nosso acervo sem custo adicionak. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i></p>                
+            </details>
+
+            <h2>Para festa no seu espaço</h2>
+            <details> 
+                <summary>Buffet Móvel</summary>
+                    <p>Festas infantis e adultos<br>
+                    Coffee Break<br>
+                    Eventos coporativos</p>                
+                </ul>
+            </details>    
+        </section>
         
-            <h3> Para festa no seu espaço</h3>
-            <ul>
-                <li>Festas infantis e adultos</li>
-                <li>Coffee Break</li>
-                <li>Eventos coporativos</li>                
-            </ul>
     </section>
 
     <section id="contato">

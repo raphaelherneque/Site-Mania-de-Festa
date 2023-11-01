@@ -1,0 +1,6 @@
+#974478 roxo
+#f2c604 amarelo
+#007cc2 azul
+#dd127b pink
+#00923f verde
+#da251c vermelho
