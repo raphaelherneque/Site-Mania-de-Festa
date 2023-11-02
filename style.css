@@ -1,51 +1,112 @@
 @import url(./assets/CSS/reset.css);
 
-body{
-    background-color: #fff;
+body .doodle{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    opacity: .05;
+    z-index: -1;    
 }
 
-.cabecalho{
-    display: flex;
-    height: 120px;
-    width: auto;
-    flex-direction: row;
-    justify-content: space-around; 
+header{
+    width: 100%;
+    height: 280px;
+    position: relative;
+    border-bottom: 10px dotted #974478;
+} 
+
+.logo{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid red
-}
-
-.cabecalho #menu-interno{
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.cabecalho a {
-    font-family: 'Amatic SC';
-    font-size: 40px;
-    font-weight: 700;
-    padding: 20px 20px;
-    text-decoration: none;
     
 }
 
+div .img-logo{    
+    /* display: block; */
+    width: 70%;
+    padding: 35px 0 0 0;
+    /* margin-left: auto; */
+    /* margin-right: auto;     */
+} 
 
-.cabecalho button {
+header div .text-logo{
+    font-family: 'Amatic SC';
+    font-size: 60px;
+    color: #007cc2;    
+}
+
+.menu-interno{
+    width: auto;
+    height: 280px;
+    padding: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #25d366;
-    border-radius: 30px;
-    box-shadow: 10px #768f76;
-    font-family: 'Amatic SC';
-    font-size: 40px;
-    padding-right: 20px;
+    border-bottom: 10px dotted #00923f;
 }
 
-.descricao{
-    height: 600px;    
+.menu-interno .menu {
+    display: flex ;
+    flex-direction: row;
+    justify-content:  space-evenly;
+    align-items: center ;
+    padding: 10px;
 }
-.descricao #mania{
-    width: 1200px;
-}pa
+.menu-interno .menu .text{
+    font-family: 'Amatic SC';
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu-interno .menu .text#cor1{
+    color:#007cc2;
+    text-shadow: 0 0 5px #007cc2;
+}
+
+.menu-interno .menu .text#cor2{
+    color:#00923f;
+    text-shadow: 0 0 5px #00923f;
+}
+
+.menu-interno .menu .text#cor3{
+    color:#dd127b;
+    text-shadow: 0 0 5px #dd127b;
+}
+.menu-interno button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:35px;
+    text-shadow: 0 0 7px white;
+    color:white;
+    background-color: rgb(37, 211, 112);
+    height: 65px;
+    width: 290px;
+    padding: 10px;
+    border:1.5px solid white;
+    border-radius: 30px;
+    outline-color:  rgb(37, 211, 112);
+    outline-width: 2px;
+    outline-style: solid;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;    
+}
+
+.menu-interno button .button-text{
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 5px white;
+    /* padding-left: 10px; */
+}
+
 
