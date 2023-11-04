@@ -1,16 +1,22 @@
 @import url(./assets/CSS/reset.css);
 
-body .doodle{
+body .doodle{   
+/* background-image: url(./assets/IMG/doodle.jpg);
+background-repeat: repeat-y;
+background-position: top;
+background-attachment: scroll; */
     position: absolute;
     top: 0px;
     width: 100%;
+    height: 100%;
     opacity: .05;
-    z-index: -1;    
+    z-index: -1;
 }
 
 header{
     width: 100%;
-    height: 280px;
+    max-height: 310px;
+    height: 310px;
     position: relative;
     border-bottom: 10px dotted #974478;
 } 
@@ -24,11 +30,8 @@ header{
 }
 
 div .img-logo{    
-    /* display: block; */
     width: 70%;
-    padding: 35px 0 0 0;
-    /* margin-left: auto; */
-    /* margin-right: auto;     */
+    padding: 20px 0 0 0;
 } 
 
 header div .text-logo{
@@ -39,22 +42,23 @@ header div .text-logo{
 
 .menu-interno{
     width: auto;
-    height: 280px;
+    height: 330px;
     padding: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 10px dotted #00923f;
+    border-top: 10px dotted #00923f;
 }
 
-.menu-interno .menu {
+.menu-interno .menu{
     display: flex ;
     flex-direction: row;
     justify-content:  space-evenly;
     align-items: center ;
     padding: 10px;
 }
+
 .menu-interno .menu .text{
     font-family: 'Amatic SC';
     font-size: 50px;
@@ -62,6 +66,11 @@ header div .text-logo{
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
+    transition: 0.7s;
+}
+
+.menu-interno .menu .text:hover{
+    scale: 110%;
 }
 
 .menu-interno .menu .text#cor1{
@@ -96,7 +105,12 @@ header div .text-logo{
     outline-width: 2px;
     outline-style: solid;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;    
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+    transition: .7s;    
+}
+
+.menu-interno button:hover{
+    scale: 110%;
 }
 
 .menu-interno button .button-text{
@@ -108,5 +122,178 @@ header div .text-logo{
     text-shadow: 0 0 5px white;
     /* padding-left: 10px; */
 }
+
+.descricao{
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border-top: 10px dotted #dd127b; */
+}
+
+.descricao .doodle{
+    position: absolute;
+    top: 641px;
+    width: 100%;
+    height: 661px;
+    opacity: .05;
+    z-index: -1;
+}
+
+.descricao h2{
+    font-family: 'Amatic SC';
+    font-size: 80px;
+    font-weight: 700;
+    color: #007cc2;
+    text-shadow: 0 0 7px #007cc2;
+}
+
+.descricao p{
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    text-align: center;
+}
+
+.descricao li{
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    font-weight: 700;
+    color: #0e354b;
+    list-style-image:url(./assets/IMG/check-solid.svg) ;
+    transition: .3s;
+
+}
+
+.descricao li:hover{
+    background-image: linear-gradient(to left, #007cc23a, #007cc2dd);
+    border-radius: 20px;
+    color: white;
+    scale: 110%;
+    
+}
+
+.descricao button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size:35px;
+    text-shadow: 0 0 7px white;
+    color:white;
+    background-color: rgb(37, 211, 112);
+    height: 65px;
+    width: 290px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border:1.5px solid white;
+    border-radius: 30px;
+    outline-color:  rgb(37, 211, 112);
+    outline-width: 2px;
+    outline-style: solid;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+    transition: .7s;    
+}
+
+.descricao button:hover{
+    scale: 110%;
+}
+
+.descricao button .button-text{
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 5px white;
+    /* padding-left: 10px; */
+}
+
+.pacotes-do-buffet {
+    height: 641px;
+    max-height: 641px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-top: 10px dotted #f2c604;    
+}
+
+.pacotes-do-buffet .doodle{
+    height: 641px;
+    width: 100%;
+    z-index: -1;
+    top: 1280px;
+    position: absolute;
+    opacity: .05;    
+}
+
+.pacotes-do-buffet h1{
+    font-family: 'Amatic SC';
+    font-size: 80px;
+    font-weight: 700;
+    color: #974478;
+    text-shadow: 0 0 7px #974478;
+    margin-top: 50px;
+}
+
+.menu-pacotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* max-width: 800px; */
+    margin:100px 0 300px;
+}
+
+.menu-pacotes details{
+
+}
+
+.menu-pacotes details summary{
+    width: 250px;
+    background-color: #974479dc;    
+    border-radius: 25px;
+    margin: 0 20 0 20;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Amatic SC';
+    text-shadow:0 0 7 #282828;
+    text-align: center;
+    padding: 2%;    
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+}
+
+.menu-pacotes details summary:hover{
+    scale: 110%;
+    
+}
+
+.menu-pacotes details p{
+    font-family: 'Amatic SC';
+    background-color: #28282815;
+    padding: 2%;
+    transition: all .5s;
+} 
+
+.contato{
+    height: 611px;
+    max-height: 611px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    height: 30px;
+}
+
+
+
+
 
 
