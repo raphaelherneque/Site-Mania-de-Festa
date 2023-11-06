@@ -5,33 +5,29 @@
     <meta charset="UTF-8">
     <title>Buffet Mania de Festa - Festas Infantis</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/IMG/favicon-16x16.png">
-    <!-- Você pode adicionar links para seus estilos CSS aqui -->
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/style.css"> 
     <script src="https://kit.fontawesome.com/f4c3614949.js" crossorigin="anonymous"></script>    
 </head>
 <body>
-    <img class="doodle" src="./assets/IMG/doodle.jpg">
-    <section class="menu-interno">
-        <section class="menu">
-            <a class="text" id="cor1" href="#descricao">O BUFFET</a>
-            <a class="text" id="cor2" href="#pacotes">NOSSOS PACOTES</a>
-            <a class="text" id="cor3" href="#contato">CONTATO</a>
-        </section>
-        <button >
-            <i class="fa-brands fa-whatsapp"></i>
-            <a class="button-text" href="https://wa.me/5585981555252" target="_blank" >ORÇAMENTO</a>
-        </button>
-    </section>
-    
-    <header>
+    <header class="cabecalho">
+        <section class="menu-navegacao">
+            <div class="menu">
+                <a class="text" id="cor1" href="#descricao">O BUFFET</a>
+                <a class="text" id="cor2" href="#nossos-pacotes">NOSSOS PACOTES</a>
+                <a class="text" id="cor3" href="#contato">CONTATOS</a>
+            </div>
+            <button >
+                <i class="fa-brands fa-whatsapp"></i>
+                <a class="button-text" href="https://api.whatsapp.com/send?phone=5585981555252&text=Olá, venho do site e gostaria de solicitar um orçamento." target="_blank" >ORÇAMENTO</a>
+            </button>
+        </section> 
         <div class="logo">
             <img class="img-logo" src="./assets/IMG/Logo Mania de Festa 2024.png">
             <h1 class="text-logo">Buffet Infantil e Catering</h1>     
         </div>   
-    </header>
+    </header>   
 
     <section class="descricao" id="descricao">
-        <img class="doodle" src="./assets/IMG/doodle.jpg">
         <h2>Nossos Serviços</h2>
         <p>Oferecemos uma variedade de serviços para tornar a festa dos pequenos inesquecível.<br> Nossos serviços incluem:</p>
         <ul>
@@ -43,68 +39,66 @@
         </ul>
         <button >
             <i class="fa-brands fa-whatsapp"></i>
-            <a class="button-text" href="https://wa.me/5585981555252" target="_blank" >ORÇAMENTO</a>
+            <a class="button-text" href="https://api.whatsapp.com/send?phone=5585981555252&text=Olá, venho do site e gostaria de solicitar um orçamento." target="_blank" >ORÇAMENTO</a>
         </button>
     </section>
-    
-    
-    <section class="pacotes-do-buffet"  id="pacotes">
-        <img class="doodle" src="./assets/IMG/doodle.jpg">
+        
+    <section class="pacotes-do-buffet" id="nossos-pacotes">
         <h1>Nossos Pacotes</h1>
         <section class="menu-pacotes">             
-            <details>
-                <summary>Pacote Festou</summary>
-                    <p>Para quem procura um <b>preço baixo</b> aliado a qualidade de serviço.<br>
+            <div class="pacotes">
+                <h2>Pacote Festou</h2>
+                    <p id="festou">Para quem procura um <b>preço baixo</b> aliado a qualidade de serviço.<br>
                     Exclusivos para eventos de <b>segunda a quinta, exceto feriados</b><br>
                     Serviço de buffet completo<br>
                     Desfrute de todos os temas que <b>já temos</b> em nosso acervo sem custo adicional. <i>Para temas fora do acervo consulte nossa equipe.</i></p>
-            </details> 
+            </div> 
             
-            <details>
-                <summary>Pacote Mania</summary>
-                    <p>Oferece a experiência ampla.<br>
+            <div class="pacotes">
+                <h2>Pacote Mania</h2>
+                    <p id="mania">Oferece a experiência ampla.<br>
                     Realize seu evento em qualquer dia disponível em nossa agenda</b><br>
                     Serviço de buffet completo<br>
-                    Desfrute todas as possibilidades de temas de nosso acervo sem custo adicionak. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i>
-            </details>
+                    Desfrute todas as possibilidades de temas de nosso acervo sem custo adicional. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i>
+            </div>
             
-            <details>
-                <summary>Pacote Premiun</summary>
-                    <p>A forma mais completa e tranquila de contratar sua festa.<br>
-                    Bolo cenográfico - Sousplat e Guardanapo Pesonalizados - Mimos personalizado - Centros de mesa - Recreação - Doces - Chocolates - Cobertura fotográfica - Ensaio fotográfico - Convite virtual<br>
+            <div class="pacotes">
+                <h2>Pacote Premium</h2>
+                    <p id="premium">A forma mais completa e tranquila de contratar sua festa.<br><br>
+                    Inclui: Bolo cenográfico - Sousplat e Guardanapo Pesonalizados - Mimos personalizado - Centros de mesa - Recreação - Doces - Chocolates - Cobertura fotográfica - Ensaio fotográfico - Convite virtual<br><br>
                     Realize seu evento em qualquer dia disponível em nossa agenda</b><br>
                     Serviço de buffet completo<br>
-                    Desfrute todas as possibilidades de temas de nosso acervo sem custo adicionak. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i></p>                
-            </details>
+                    Desfrute todas as possibilidades de temas de nosso acervo sem custo adicional. <i>Custo reduzido para produção de temas novos, consulte nossa equipe para ver condições.</i></p>                
+            </div>
 
-            <details> 
-                <summary>Buffet Móvel</summary>
-                    <p>Festas infantis e adultos<br>
+            <div class="pacotes"> 
+                <h2>Buffet Móvel</h2>
+                    <p id="movel">Festas infantis e adultos<br>
                     Coffee Break<br>
                     Eventos coporativos</p>                
                 </ul>
-            </details>    
+            </div>    
         </section>
         
     </section>
 
     <section class="contato" id="contato">
-        <h2>Contato</h2>
-        <p>Estamos ansiosos para ajudá-lo a planejar a festa perfeita para seu filho. Entre em contato conosco:</p>
-        <address>
-            E-mail: <a href="mailto:contato@buffetmaniadefesta.com">contato@buffetmaniadefesta.com</a><br>
-            Telefone: (seu número de telefone)
-        </address>
-        <!-- Adicione o botão do WhatsApp com o link -->
-        <a href="https://wa.me/5585981555252" target="_blank" class="whatsapp-button">Fale Conosco no WhatsApp</a>
-
-        <!-- Incorporar o mapa do Google -->
-        <h3>Como chegar</h3>
+        <h2>Contatos</h2>
+        <div class="card-contato">
+            <p>Estamos ansiosos para ajudá-lo a planejar a festa perfeita para seu filho. Entre em contato conosco:</p>
+            <address>
+                <i class="fa-regular fa-envelope"></i>  E-mail: <a href="mailto:contato@buffetmaniadefesta.com">orcamentomaniadefesta@gmail.com</a><br>
+                <i class="fa-solid fa-phone"></i>  Telefone: <a href="https://api.whatsapp.com/send?phone=5585981555252&text=Olá, venho do site e gostaria de solicitar um orçamento." target="_blank" class="whatsapp-button">(85) 981555252</a><br>
+                <i class="fa-brands fa-instagram"></i>  Instragram:<a href="https://www.instagram.com/buffetmaniadefesta/" target="_blank">@buffetmaniadefesta</a>
+            </address>
+        </div>    
+        <h3>Veja no mapa abaixo no localização e amplie para ver chegar</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2753276077688!2d-38.5028663011269!3d-3.750106587699772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7489554c6a6b9%3A0x74d84fcf344fe19c!2sMania%20de%20Festa!5e0!3m2!1spt-BR!2sbr!4v1698423151470!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>
         <p>&copy; 2023 Buffet Mania de Festa</p>
+        <a  class="developer" href="https://www.instagram.com/raphaelherneque" target="_blank">Raphael Herneque</a>
     </footer>
 </body>
 </html>
